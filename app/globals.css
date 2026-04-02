@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-obsidian: #0C0A0B;
+  --color-gold: #C9A96E;
+  --color-gold-light: #D4B87E;
+  --color-rose: #7D4E5E;
+  --color-cream: #FAF7F4;
+  --color-slate-warm: #2A2525;
+  --color-white: #FFFFFF;
+  --font-cormorant: var(--font-cormorant);
+  --font-inter: var(--font-inter);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-obsidian);
+  color: var(--color-cream);
+  font-family: var(--font-inter), system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-cormorant), Georgia, serif;
+  line-height: 1.1;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-obsidian);
+}
+
+/* Lenis smooth scroll */
+html.lenis, html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+/* Scroll progress bar */
+.scroll-progress {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(to right, var(--color-gold), var(--color-rose));
+  z-index: 9999;
+  transition: width 0.1s linear;
+}
+
+/* Gold gradient placeholder for products without images */
+.gold-gradient-placeholder {
+  background: linear-gradient(135deg, var(--color-gold) 0%, var(--color-rose) 100%);
+}
+
+@media (max-width: 768px) {
+  body {
+    font-size: 16px;
+  }
+}
