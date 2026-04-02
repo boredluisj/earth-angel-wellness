@@ -51,25 +51,29 @@ const products: Product[] = [
   },
   {
     name: "Bella",
-    hasImage: false,
+    image: "/images/product-bella.jpg",
+    hasImage: true,
     description:
       "Premium wellness supplement for vitality and balance. Formulated to support overall wellbeing alongside your medical protocol.",
   },
   {
     name: "LDN",
-    hasImage: false,
+    image: "/images/product-ldn.jpg",
+    hasImage: true,
     description:
       "Low Dose Naltrexone for immune system modulation and inflammation reduction. Used in autoimmune support and chronic condition management.",
   },
   {
     name: "NAD+",
-    hasImage: false,
+    image: "/images/product-nad.jpg",
+    hasImage: true,
     description:
       "Cellular energy restoration and anti-aging support at the cellular level. NAD+ supports mitochondrial function, mental clarity, and longevity.",
   },
   {
     name: "Sermorelin",
-    hasImage: false,
+    image: "/images/product-sermorelin.jpg",
+    hasImage: true,
     description:
       "Growth hormone releaser therapy for muscle growth, improved sleep quality, and tissue repair. A foundational peptide for aging well.",
   },
